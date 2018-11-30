@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com:modelEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aut="http://xmlns.oracle.com/communications/sce/osm/model/process/task/automation" xmlns:com="http://www.mslv.com/studio/core/model/common" xmlns:prov="http://xmlns.oracle.com/communications/sce/osm/model/provisioning" xmlns:task="http://xmlns.oracle.com/communications/sce/osm/model/process/task" xmlns="http://xmlns.oracle.com/communications/sce/osm/model/process/task" xsi:type="task:manualTaskType" name="OrderCreationTask">
   <com:displayName>OrderCreationTask</com:displayName>
-  <com:saveVersion>4</com:saveVersion>
+  <com:saveVersion>13</com:saveVersion>
   <com:id>2MxsBr+8RiKRIemDGO5wyA</com:id>
   <task:orderType>
     <com:entity>L3-DD-DJLOrder</com:entity>
@@ -199,6 +199,20 @@
             <task:childRefNode>true</task:childRefNode>
           </task:childNode>
         </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/InstallOrderFunction/calculatedStartDate</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/InstallOrderFunction/duration</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
       </task:childNode>
       <task:childNode>
         <com:entity>L3-DD-DJLOrder</com:entity>
@@ -283,6 +297,20 @@
             </task:childNode>
             <task:childRefNode>true</task:childRefNode>
           </task:childNode>
+        </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/FulfillBillingFunction/calculatedStartDate</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/FulfillBillingFunction/duration</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
         </task:childNode>
       </task:childNode>
       <task:childNode>
@@ -369,6 +397,20 @@
             <task:childRefNode>true</task:childRefNode>
           </task:childNode>
         </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/InitiateBillingFunction/calculatedStartDate</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/InitiateBillingFunction/duration</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
       </task:childNode>
       <task:childNode>
         <com:entity>L3-DD-DJLOrder</com:entity>
@@ -454,6 +496,20 @@
             <task:childRefNode>true</task:childRefNode>
           </task:childNode>
         </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/ProvisioningOrderFunction/calculatedStartDate</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/ProvisioningOrderFunction/duration</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
       </task:childNode>
       <task:childNode>
         <com:entity>L3-DD-DJLOrder</com:entity>
@@ -538,6 +594,20 @@
             </task:childNode>
             <task:childRefNode>true</task:childRefNode>
           </task:childNode>
+        </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/ShipOrderFunction/calculatedStartDate</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
+        </task:childNode>
+        <task:childNode>
+          <com:entity>L3-DD-DJLOrder</com:entity>
+          <com:entityType>order</com:entityType>
+          <com:relationship>ora.task.orderTemplateRef</com:relationship>
+          <com:element>/ControlData/Functions/ShipOrderFunction/duration</com:element>
+          <com:elementType>com.mslv.studio.provisioning.order.node</com:elementType>
         </task:childNode>
       </task:childNode>
     </task:childNode>
@@ -889,6 +959,56 @@
   </task:viewNodeExtension>
   <task:viewNodeExtension>
     <task:path>/ControlData/OrderItem/RequestedDeliveryDate</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/FulfillBillingFunction/calculatedStartDate</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/FulfillBillingFunction/duration</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/InitiateBillingFunction/calculatedStartDate</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/InitiateBillingFunction/duration</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/InstallOrderFunction/calculatedStartDate</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/InstallOrderFunction/duration</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/ProvisioningOrderFunction/calculatedStartDate</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/ProvisioningOrderFunction/duration</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/ShipOrderFunction/calculatedStartDate</task:path>
+    <task:editable>true</task:editable>
+    <task:defaultValue></task:defaultValue>
+  </task:viewNodeExtension>
+  <task:viewNodeExtension>
+    <task:path>/ControlData/Functions/ShipOrderFunction/duration</task:path>
     <task:editable>true</task:editable>
     <task:defaultValue></task:defaultValue>
   </task:viewNodeExtension>
